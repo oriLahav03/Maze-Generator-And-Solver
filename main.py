@@ -28,7 +28,7 @@ def main(stdScreen=None, **kwargs):
 
     elif solve_maze:
         path = solver.find_path(maze.final_maze_to_solve, visualize, stdScreen)
-        maze.write_svg('mazes/maze-solved.svg', True, path)
+        maze.write_svg('mazes/maze-solution.svg', True, path)
 
     maze.write_svg('mazes/maze.svg', False)
 
